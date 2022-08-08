@@ -6,14 +6,13 @@ public class RepeatBackground : MonoBehaviour
 {
     Vector3 startPosi;
     float whenRepeat;
-    // Start is called before the first frame update
+
     void Start()
     {
         startPosi = transform.position;
         whenRepeat = GetComponent<BoxCollider>().size.x / 2;
     }
 
-    // Update is called once per frame
     void Update()
     {
         /* الخفلفية هي صورة بتتكون من صورتين ورا بعض متطبقتين.. ف مهمة

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     private Rigidbody playerRG;
     private float jumpForce = 700;
     private float gravityModifier = 2;
@@ -21,7 +20,6 @@ public class PlayerController : MonoBehaviour
     internal static int score = 0;
     internal static bool gameOver = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         playerRG = GetComponent<Rigidbody>();
@@ -33,7 +31,6 @@ public class PlayerController : MonoBehaviour
         actionSFX = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)  
